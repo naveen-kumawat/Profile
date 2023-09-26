@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Gallery</title>
+    <link rel="stylesheet" href="lightbar.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="shortcut icon" href="./assets/pc2.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylelight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Naveen Kumawat</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about " onclick="navigateToAbout()">About</a></li>
+                <li><a href="#experience" onclick="navigateToExperience()">Experience</a></li>
+                <li><a href="#projects" onclick="navigateToProjects()">Projects</a></li>
+                <li><a href="#gallery" onclick="navigateToGallery()">Gallery</a></li>
+                <li><a href="#contact" onclick="navigateToContact()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Naveen Kumawat</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu(), navigateToAbout()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu(), navigateToExperience()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu(), navigateToProjects()">Projects</a></li>
+                <li><a href="#gallery" onclick="toggleMenu(), navigateToGallery()">Gallery</a></li>
+                <li><a href="#contact" onclick="toggleMenu(),navigateToContact()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="#gallery">
+    <div class="wrapper">
+        <div class="gallery">
+            <div class="image"><span><img src="images/img4.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/img5.png" alt=""></span></div>
+            <div class="image"><span><img src="images/img3.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/img7.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/img1.jpg" alt=""></span></div>
+            <div class="image"><span><img src="images/img6.jpg" alt=""></span></div>
+        </div>
+    </div>
+    <div class="preview-box">
+        <div class="details">
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+            <div class="slide prev button-hidden"><i class="fas fa-angle-left"></i></div>
+            <div class="slide next button-hidden"><i class="fas fa-angle-right"></i></div>
+            <img src="" alt="">
+        </div>
+    </div>
+    <div class="shadow"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Copyright &#169; 2023 Naveen Kumawat. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function navigateToAbout() {
+            window.location.href = 'index.html#about';
+        }
+        function navigateToExperience() {
+            window.location.href = 'index.html#experience';
+        }
+        function navigateToProjects() {
+            window.location.href = 'index.html#projects';
+        }
+        function navigateToGallery() {
+            window.location.href = 'lightbox.html#gallery';
+        }
+        function navigateToContact() {
+            window.location.href = 'index.html#contact';
+        }
+    </script>
+    <script src="scriptlight.js"></script>
+</body>
+
+</html>
