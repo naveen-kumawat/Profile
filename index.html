@@ -15,7 +15,7 @@
       <div class="logo">Naveen Kumawat</div>
       <div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="navigateToIndex()">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -33,7 +33,7 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="/" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#" onclick="toggleMenu(), navigateToIndex()">Home</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -427,7 +427,7 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="/">Home</a></li>
+            <li><a href="#" onclick="navigateToIndex()">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -441,6 +441,9 @@
     <script>
       function navigateTolightbox() {
           window.location.href = 'lightbox.html#gallery';
+      }
+       function navigateToIndex() {
+          window.location.href = 'index.html';
       }
   </script>
     <script src="script.js"></script>
