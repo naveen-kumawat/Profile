@@ -19,7 +19,7 @@
         <div class="logo">Naveen Kumawat</div>
         <div>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
+                <li><a href="#"onclick="navigateToIndex()">Home</a></li>
                 <li><a href="#about " onclick="navigateToAbout()">About</a></li>
                 <li><a href="#experience" onclick="navigateToExperience()">Experience</a></li>
                 <li><a href="#projects" onclick="navigateToProjects()">Projects</a></li>
@@ -37,7 +37,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="/" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#" onclick="toggleMenu(), navigateToIndex()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu(), navigateToAbout()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu(), navigateToExperience()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu(), navigateToProjects()">Projects</a></li>
@@ -77,6 +77,9 @@
         <p>Copyright &#169; 2023 Naveen Kumawat. All Rights Reserved.</p>
     </footer>
     <script>
+        function navigateToIndex() {
+            window.location.href = 'index.html';
+        }
         function navigateToAbout() {
             window.location.href = 'index.html#about';
         }
